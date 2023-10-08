@@ -4,7 +4,7 @@
 
 *{
   font-family: 'Space Mono', monospace;
-  
+  overflow-x: hidden;
 }
 
 
@@ -46,12 +46,14 @@ a{
   margin-top: 120px;
   
 }
-.pdfwork, .afterupload {
+.pdfwork{
             display: flex;
             align-items: center;
+            text-align: center;
             justify-content: center;
             flex-direction: column;
             width: 100%;
+
         }
 
 
@@ -62,13 +64,38 @@ body {
     background-color: #000000;
 } 
 
+/* CSS */
 nav {
-    background-color: #000122;
-    color: white;
-    font-family: 'Space Mono', monospace;
-    padding: 20px;
-    color: #0074D9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem; /* Adjust padding as needed */
+  background: background-color: #333;;
+background: linear-gradient(138deg, rgba(70,24,78,0.9260140728476821) 0%, rgba(25,25,57,0.9525041390728477) 34%, rgba(47,25,58,0.9127690397350994) 59%, rgba(56,46,80,0.9690604304635762) 77%, rgba(75,78,99,0.9756829470198676) 100%);
 }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-right: 20px; /* Adjust spacing between links as needed */
+}
+
+/* Style the links as needed */
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff; /* Adjust link color as needed */
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: #007bff; /* Adjust link hover color as needed */
+}
+
 
 .upload-container, .viewer-container {
     margin: 20px;
@@ -76,21 +103,22 @@ nav {
 }
 
 button {
-    background-color: #0078d4;
+    background-color: #7900b1;
     color: white;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     cursor: pointer;
+    border-radius: 15px;
 }
 #upload{
   border-radius: 15px;
-  background-color: #0047b1;
+  background-color: #7900b1;
 }
 .typewriter h1 {
     color: #fff;
     font-family: monospace;
     overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid #0047b1; /* The typwriter cursor */
+    border-right: .15em solid #7900b1; /* The typwriter cursor */
     white-space: nowrap; /* Keeps the content on a single line */
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
@@ -102,13 +130,13 @@ button {
   /* The typing effect */
   @keyframes typing {
     from { width: 0 }
-    to { width: 10% }
+    to { width: 8% }
   }
   
   /* The typewriter cursor effect */
   @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: rgb(0, 88, 122) }
+    50% { border-color: #7900b1 }
   }
   
   @import url(https://fonts.googleapis.com/css?family=Orbitron:700);
@@ -184,3 +212,230 @@ body {
   background: #000;
   
 }
+
+
+/* contact form 
+------------------------------------- */
+
+
+.form-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-left: 55%;
+}
+
+.pdfwork {
+  background: rgb(70,24,78);
+background: linear-gradient(138deg, rgba(70,24,78,0.9260140728476821) 0%, rgba(25,25,57,0.9525041390728477) 34%, rgba(47,25,58,0.9127690397350994) 59%, rgba(56,46,80,0.9690604304635762) 77%, rgba(75,78,99,0.9756829470198676) 100%);
+    color: white;
+    border-radius:  90px; /* Add rounded corners */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    flex: 1;
+}
+
+.btn {
+  color: white;
+  background-color: #007bff;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.another {
+  display: none;
+}
+
+.select-pdf, .password, .btn-upload, .select-page {
+  width: 50%;
+  padding: 5px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f4f4f4;
+}
+
+.password {
+  color: black;
+}
+
+.afterupload {
+  display: none;
+}
+
+.download {
+  text-decoration: none;
+  color: white;
+}
+
+.pdftext {
+  width: 500px;
+    height: 500px;
+    padding: 5px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    background-color: #f4f4f4;
+    text-align: center; /* Center-align the text within the textarea */
+}
+  
+.form-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+  width: 50%;
+  
+}
+
+.content {
+  flex: 1; /* Takes up remaining space */
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  /* Center vertically */
+  
+}
+
+
+
+.feedback {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-left: 20%;
+  /* Add some margin for spacing */
+}
+ /* Style the image container */
+
+
+
+/* Style the image */
+.landing img {
+  max-width: auto;
+  height: 5cap;
+  display: block;
+  margin-left: -100px;
+  border-radius: 90px;
+
+}
+
+/* Style the footer */
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Style the footer container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Style the footer content */
+.footer-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the footer logo */
+.footer-logo img {
+  width: 50px; /* Adjust the width as needed */
+  height: auto;
+  margin-right: 10px;
+}
+
+/* Style the footer links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Style the footer social icons */
+.footer-social ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-social ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.footer-social a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+/* Style the copyright text */
+.footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Add FontAwesome icons for social links */
+/* Include the FontAwesome CSS in your HTML for these icons */
+
+
+
+
+/* Style the typewrite2 container */
+.typewrite2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the typewrite2 animation */
+.typewrite2 h1 {
+  font-family: 'Courier New', monospace;
+  overflow: hidden;
+  border-right: .15em solid orange;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 25px;
+  padding: 5px;
+  animation:
+      typing2 2.5s steps(30, end),
+      blink-caret2 .5s step-end infinite;
+}
+
+/* Typing animation */
+@keyframes typing2 {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* Blinking caret animation */
+@keyframes blink-caret2 {
+  from, to { border-color: transparent }
+  50% { border-color: #7900b1 }
+}
+
+/* Add a custom cursor style */
+.cursor2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+

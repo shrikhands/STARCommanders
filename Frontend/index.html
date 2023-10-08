@@ -45,32 +45,42 @@
    
 </head>
 <body>
-    <nav>
+    <nav id="p1">
         <div class="typewriter">
-          <a  class="underline">
-        <h1 style="margin-left: 2%;">DocSniffer</h1>
-        </a>
-    </div>
+            <a class="underline" href="#">
+                <h1 style="margin-left: 2%;">DocSniffer</h1>
+            </a>
+            <br>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#mission">Our Mission</a></li>
+                <li><a href="#contact">Product</a></li>
+            </ul>
+        </div>
     </nav>
     
-    <h1 style="text-align: center; font-size: 60px; color: white;">Mission<a style="color: aqua;">.</a></h1>
-    <p style="padding: 5%; padding-top: 1%;">In this project, we present an app’s end-to-end technical stack which employs Artificial Intelligence techniques to aid the review process of technical documents. We propose an app called ‘<DocSniffer>’ which accepts a document as input and presents a summary of the entire document. Further, users can prompt questions on specific entities such as explaining the underlying issue, spacecraft parts mentioned, etc., and also provide recommendations on potential issue fixes, suggestions for grammatical errors, missing standard sections, suggestive language, etc. The app will also present a visual representation of the mission stages such as launch, orbit, and landing in a diagram when queried by the user. Each feature uses a natural language processing technique such as sentiment analysis, named entity recognition (NER), automatic summarization, topic modeling, parsing, keyword extraction, and artificial neural network for suggestive solutions against existing datasets. With ‘<DocSniffer>’, we hope space projects have a quicker document review time, efficient analysis, early catching of any discrepancies in the process, and avoiding potential failures.</p>
-    
+    <div class="container">
+        <img src="images/wp3213868.png" alt="Snow" style="width:100%;">   
+    <h1 style="text-align: center; font-size: 60px; color: white; position: absolute; top: 20%; left: 50%; transform: translate(-50%, -50%);">Mission<a style="color: aqua;">.</a></h1>
+    <p style="padding: 5%; padding-top: 1%; width: 90%; position:absolute; top: 40%; left: 50%; transform: translate(-50%, -50%);">In this project, we present an app’s end-to-end technical stack which employs Artificial Intelligence techniques to aid the review process of technical documents. We propose an app called ‘<DocSniffer>’ which accepts a document as input and presents a summary of the entire document. Further, users can prompt questions on specific entities such as explaining the underlying issue, spacecraft parts mentioned, etc., and also provide recommendations on potential issue fixes, suggestions for grammatical errors, missing standard sections, suggestive language, etc. The app will also present a visual representation of the mission stages such as launch, orbit, and landing in a diagram when queried by the user. Each feature uses a natural language processing technique such as sentiment analysis, named entity recognition (NER), automatic summarization, topic modeling, parsing, keyword extraction, and artificial neural network for suggestive solutions against existing datasets. With ‘<DocSniffer>’, we hope space projects have a quicker document review time, efficient analysis, early catching of any discrepancies in the process, and avoiding potential failures.</p>
+    </div>
     <!-- Create a div container for the file upload form and result section -->
-    <section style="border:white;" id="form">
+    <section class="form-container" id="form">
     <div class="pdfwork">
         <!-- Button to extract another PDF (hidden initially) -->
         <button style="color: white;" class="another" onclick="location.reload()">Extract Another PDF</button>
         <!-- Display text "Select PDF" -->
         <span style="color: white;">Select PDF</span>
         <!-- File input field for selecting the PDF file -->
-        <input type="file" class="selectpdf">
+        <input type="file" class="selectpdf" id="fileInput">
+
         <!-- Display text "Password :" -->
-        <spanstyle="color: white;>Password :</span>
+        <span style="color: white;">Password :</span>
         <!-- Password input field (optional) -->
         <input type="password" class="pwd" placeholder='optional'>
         <!-- Button to upload the selected PDF -->
         <button class="upload">Upload</button>
+    
         <!-- Result section (hidden initially) -->
         <div class="afterupload">
             <!-- Display text "Select Page" -->
@@ -80,10 +90,25 @@
             <!-- Download link for the extracted text file -->
             <a href="" class="download" download style="color: white;">Download Pdf Text</a>
             <!-- Textarea to display the extracted text -->
-            <textarea class="pdftext"></textarea>
+            <textarea style="width: 100%;" class="pdftext"></textarea>
         </div>
     </div>
     </section>
+    <section class="form-container" id="form">
+        <div class="content">
+            <div class="pdf-work">
+                <!-- Your existing content -->
+                <!-- ... -->
+            </div>
+        </div>
+        
+       
+       
+    </section>
+    <div class="landing">
+        <img src="images/Desktop Version.png" alt="Image Alt Text">
+    </div>
+    
     
     <!-- JavaScript code -->
 <script>
@@ -156,7 +181,41 @@
 
     
 </script>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
     
     
 </body>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="typewrite2">
+                    <h1>DocSniffer<span class="cursor2"></span></h1>
+                </div>
+                <h3>Space Apps</h3>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#p1">About Us</a></li>
+                    <li><a href="#">Our Mission</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+        </div>
+        <p>&copy; 2023 DocSniffer. All rights reserved.</p>
+    </div>
+</footer>
+
 </html>
