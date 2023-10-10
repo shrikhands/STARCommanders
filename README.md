@@ -10,6 +10,8 @@ Imagine a program that reads a NASA document and converts it into a technical st
 What exactly does it do? 
 The project entails the creation of an AI-powered software application that effectively transforms NASA papers into technical standards that are accepted by the industry by utilizing methods including PDF text extraction, natural language processing, subject modeling, and named entity recognition.
 
+![alt text](https://github.com/shrikhands/STARCommanders/blob/main/technical-stack.PNG)
+
 Phase 1: The project involves the input of standard document display model results, chats, and prompts to the user for specific entity filtration. The input is then sent for verification, where the document version is checked, and if necessary, the latest version is suggested based on access control and encryption protocols. After verification, the input goes through abstractive summarization, topic modeling, and named entity recognition processes to generate a concise summary that captures the key themes and important entities.
 
 Phase 2: This is a future aspiration, involves the development of advanced functionalities. These include suggesting missing entities in the input, providing syntactic and semantic corrections, and utilizing a trained dataset of other mission technical requirements. This phase also envisions leveraging neural network models derived from the abstractive summary and topic modeling to generate an input mission requirement document. These enhancements would further improve the AI system's ability to understand and capture the relevant information from the input and generate precise and comprehensive mission requirement documents.
